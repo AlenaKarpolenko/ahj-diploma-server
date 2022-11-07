@@ -1,25 +1,28 @@
 {
-  "name": "server",
+  "name": "ahj-diploma",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "prestart": "npm install",
     "start": "forever server.js",
-    "watch": "forever -w server.js"
+    "watch": "forever -w server.js",
+    "list": "forever list",
+    "stop": "forever stopall"
   },
+  "author": "N",
+  "license": "ISC",
   "dependencies": {
-    "faker": "^5.5.3",
-    "forever": "^4.0.1",
-    "http-event-stream": "^0.2.0",
+    "forever": "^3.0.4",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
-    "koa-combine-routers": "^4.0.2",
-    "koa-json": "^2.0.2",
     "koa-router": "^10.0.0",
     "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
     "uuid": "^8.3.2",
-    "ws": "^8.0.0"
+    "ws": "^7.4.6"
   },
-  "devDependencies": {}
+  "engines": {
+    "node": "10.x"
+  },
+  "description": ""
 }
